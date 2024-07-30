@@ -7,4 +7,11 @@ class Post extends Model
 {
     use HasFactory;
     use SoftDeletes;
+    protected $fillable = [
+        'title',
+        'author',
+        'content',
+        'creation_date',
+        'image_url',
+    ];
 }
